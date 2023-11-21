@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/button.css">
+    <title>Zackige Trennung</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        img{
+            padding-bottom: 30px;
+        }
+        .split-screen {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .left, .right {
+            flex: 1;
+            transition: flex-grow 0.3s, box-shadow 0.3s;
+            clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+            background-size: cover; /* Standardmäßig deckt das Bild den gesamten Bereich ab */
+            background-repeat: no-repeat; /* Verhindert das Wiederholen des Bildes */
+            background-position: center; /* Zentriert das Bild */
+            transition: flex-grow 0.5s ease, background-size 0.5s ease; /* Weicher Übergang für flex-grow und background-size */
+        }
+
+        .left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("static/img/ClearWEBBG4K.png");
+            background-color: #f8f9fa; /* Weiß/Grau */
+            flex-direction: column;
+        }
+
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("static/img/DarknetBG4K.png"); /* Dunkelgrau */
+            clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+            flex-direction: column;
+        }
+        
+        .left:hover, .right:hover {
+            flex-grow: 1.5;
+            background-size: 110% cover; /* Vergrößert das Bild in der Breite */
+        }
+
+        button
+
+    </style>
+</head>
+<body>
+    <div class="split-screen">
+        <div class="left">
+            <img src="static/img/ClearWebPB.png" alt="Larry-Bright" width="200px" style="border-radius: 200px;">
+            <button class="buttonClear">Go!</button>
+        </div>
+        <div class="right">
+            <img src="static/img/DarkentPB.png" alt="Larry-Dark" width="200px" style="border-radius: 200px;">
+            <button class="buttonDark">Go!</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
