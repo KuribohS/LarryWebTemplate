@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  background-image: url("../img/ClearWEBBG4K.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+body .hero .whitebackground {
+  flex-direction: column;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.772);
+}
+body .hero .whitebackground .status {
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body .hero .whitebackground .status .greenCircle {
+  margin-left: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: green;
+  border-radius: 20px;
+}
+body .content {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .content .whitebackground {
+  margin-bottom: 50px;
+  flex-direction: column;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.772);
+}
+body .content .whitebackground .line {
+  width: 800px;
+  background-color: rgba(128, 128, 128, 0.382);
+  height: 2px;
+}
+body .content .whitebackground .header {
+  padding-bottom: 20px;
+  width: 800px;
+}
+body .content .whitebackground .header .left, body .content .whitebackground .header .col {
+  align-items: center;
+  display: flex;
+}
+body .content .whitebackground .header .left h3, body .content .whitebackground .header .col h3 {
+  margin: 0px !important;
+}
+body .content .whitebackground .header .middle {
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+body .content .whitebackground .header .middle .statusCircle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body .content .whitebackground .header .right {
+  display: flex;
+  justify-content: right;
+}
+body .content .whitebackground .header .greenCircle {
+  margin-left: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: green;
+  border-radius: 20px;
+}
+body .content .whitebackground .sites {
+  width: 800px;
+}
+body .content .whitebackground .sites .site {
+  padding-top: 20px;
+}
+body .content .whitebackground .sites .site .left, body .content .whitebackground .sites .site .col {
+  align-items: center;
+  display: flex;
+}
+body .content .whitebackground .sites .site .left h4, body .content .whitebackground .sites .site .col h4 {
+  margin: 0px !important;
+}
+body .content .whitebackground .sites .site .middle {
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+body .content .whitebackground .sites .site .middle .statusCircle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body .content .whitebackground .sites .site .right {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+body .content .whitebackground .sites .site .greenCircle {
+  margin-left: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: green;
+  border-radius: 20px;
+}/*# sourceMappingURL=main.css.map */
