@@ -3,9 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/slide.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const switches = document.querySelectorAll('.switch input[type="checkbox"]');
+        switches.forEach((sw) => {
+            sw.addEventListener('change', function() {
+                // Findet das übergeordnete Label-Element, um dessen ID zu verwenden
+                let parentLabelId = this.closest('.switch').id;
+                console.log(parentLabelId + ' ' + (this.checked ? 'ON' : 'OFF'));
+            });
+        });
+    });
+</script>
+
+
 <body>
-    
+    <div class="hero">
+        <div class="whitebackground">
+            <div class="pb">
+                <img src="static/img/DarkentPB.png" alt="WebPB" width="150px" style="border-radius: 200px;">
+            </div>
+            <div class="status">active<div class="greenCircle"></div></div>
+            <div class="timer">Next Scan in </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="whitebackground">
+            <div class="header">
+                <div class="row">
+                    <div class="col left">
+                        <h3>Test Seite 1</h3>
+                    </div>
+                    <div class="col middle">
+                        <div class="statusCircle">active <div class="greenCircle"></div></div>
+                    </div>
+                    <div class="col right">
+                        <label class="switch" id ="Mainbutton01">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                          </label>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="sites">
+                <div class="site">
+                    <div class="row">
+                        <div class="col left">
+                            <h4>Test Seite 1</h4>
+                        </div>
+                        <div class="col middle">
+                            <div class="statusCircle">active <div class="greenCircle"></div></div>
+                        </div>
+                        <div class="col right">
+                            <label class="switch" id="LowButton01">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="site">
+                    <div class="row">
+                        <div class="col left">
+                            <h4>Test Seite 1</h4>
+                        </div>
+                        <div class="col middle">
+                            <div class="statusCircle">active <div class="greenCircle"></div></div>
+                        </div>
+                        <div class="col right">
+                            <label class="switch" id="LowButton02">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="site">
+                    <div class="row">
+                        <div class="col left">
+                            <h4>Test Seite 1</h4>
+                        </div>
+                        <div class="col middle">
+                            <div class="statusCircle">active <div class="greenCircle"></div></div>
+                        </div>
+                        <div class="col right">
+                            <label class="switch" id="LowButton03">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="site">
+                    <div class="row">
+                        <div class="col left">
+                            <h4>Test Seite 1</h4>
+                        </div>
+                        <div class="col middle">
+                            <div class="statusCircle">active <div class="greenCircle"></div></div>
+                        </div>
+                        <div class="col right">
+                            <label class="switch" id="LowButton04">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="whitebackground">
+            <div class="header">
+                <div class="row">
+                    <div class="col left">
+                        <h3>Test Seite 1</h3>
+                    </div>
+                    <div class="col middle">
+                        <div class="statusCircle">active <div class="greenCircle"></div></div>
+                    </div>
+                    <div class="col right">
+                        <label class="switch" id="MainButton02">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                          </label>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="sites">
+                <div class="site">
+                    <div class="row">
+                        <div class="col left">
+                            <h4>Test Seite 1</h4>
+                        </div>
+                        <div class="col middle">
+                            <div class="statusCircle">active <div class="greenCircle"></div></div>
+                        </div>
+                        <div class="col right">
+                            <label class="switch" id="LowButton11">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="site">
+                    <div class="row">
+                        <div class="col left">
+                            <h4>Test Seite 1</h4>
+                        </div>
+                        <div class="col middle">
+                            <div class="statusCircle">active <div class="greenCircle"></div></div>
+                        </div>
+                        <div class="col right">
+                            <label class="switch" id="LowButton12">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="site">
+                    <div class="row">
+                        <div class="col left">
+                            <h4>Test Seite 1</h4>
+                        </div>
+                        <div class="col middle">
+                            <div class="statusCircle">active <div class="greenCircle"></div></div>
+                        </div>
+                        <div class="col right">
+                            <label class="switch" id="LowButton13">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="site">
+                    <div class="row">
+                        <div class="col left">
+                            <h4>Test Seite 1</h4>
+                        </div>
+                        <div class="col middle">
+                            <div class="statusCircle">active <div class="greenCircle"></div></div>
+                        </div>
+                        <div class="col right">
+                            <label class="switch" id="LowButton14">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
 </body>
 </html>
